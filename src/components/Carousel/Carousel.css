@@ -1,0 +1,60 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__nav {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background: url(img/left.svg) center center / contain;
+    width: 63px;
+    height: 63px;
+    margin-top: -31px;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.carousel__nav.carousel__next {
+    right: 10px;
+    left: auto;
+    background: url(img/right.svg) center center / contain;
+}
+
+.carousel__nav:hover,
+.carousel__nav.carousel__next:hover {
+    transform: scale(1.2);
+}
+
+img {
+    width: 100%;
+}
+
+
+.carousel__pagination {
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel__pagination button {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    opacity: .8;
+    border-radius: 10px;
+    border: none;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.carousel__pagination button.active,
+.carousel__pagination button:hover {
+    background: #fff;
+    transform: scale(1.2);
+}
