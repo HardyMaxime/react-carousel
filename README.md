@@ -1,3 +1,3 @@
 React Carousel
 
-Demo ! //
+Demo :https://hardymaxime.github.io/react-carousel/
